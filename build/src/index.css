@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styling */
+html, body, #root {
+  @apply h-screen w-screen flex items-center justify-center bg-base-200 text-lg;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Center the entire game page */
+.game-container {
+  @apply flex flex-col items-center justify-center w-full max-w-4xl p-6;
+}
+
+/* Ranking Slots */
+.ranking-panel {
+  @apply flex justify-center gap-6 p-6 bg-white shadow-lg rounded-xl min-h-[150px];
+}
+
+/* Draggable Items */
+.draggable-item {
+  @apply cursor-pointer transition-transform duration-200;
+}
+.draggable-item:active {
+  @apply scale-105;
+}
+
+/* Swiper Carousel */
+.swiper-container {
+  @apply flex justify-center w-full max-w-2xl p-4;
+}
+
+/* Image Styling */
+img {
+  @apply rounded-lg shadow-md;
+}

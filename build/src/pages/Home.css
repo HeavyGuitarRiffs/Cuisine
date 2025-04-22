@@ -1,0 +1,15 @@
+@keyframes moveBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .bg-food-animation {
+    background: url("https://source.unsplash.com/1920x1080/?restaurant,food") no-repeat center center;
+    background-size: cover;
+    animation: moveBackground 20s linear infinite alternate;
+  }
+  
